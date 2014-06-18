@@ -1,0 +1,9 @@
+Import shapefile
+
+Sf = shapefile.reader('xx.shp')
+
+Shapes = sf.shapes
+Rec = sf.records()#get all records
+Rec_uid = sf.records(0)#get whole row
+Shapes[0].points[0]#get first point of first elem
+
